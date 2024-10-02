@@ -1,0 +1,162 @@
+
+<aiml version="1.0.1" encoding="UTF-8">
+	
+ <!-- Search internet -->
+
+    <category>
+        <pattern>search *</pattern>
+        <template>
+             <random>
+               <li>Sure thing! </li>
+               <li>Right away, sir! </li>
+               <li>On it! </li>
+            </random>
+            <system>start chrome www.google.com/search?q=<star index="1"/></system>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>OPEN GOOGLE</pattern>
+        <template>
+             <random>
+               <li>Sure thing! </li>
+               <li>Right away, sir! </li>
+               <li>On it! </li>
+            </random>
+            <system>start chrome www.google.com</system>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>GOOGLE *</pattern>
+        <template>
+             <random>
+               <li>Sure thing! </li>
+               <li>Right away, sir! </li>
+               <li>On it! </li>
+            </random>
+            <system>start chrome www.google.com/search?q=<star/></system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SEARCH FOR * ON GOOGLE></pattern>
+        <template>
+             <srai>GOOGLE <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SEARCH GOOGLE FOR *</pattern>
+        <template>
+             <srai>start chrome www.google.com/search?q="<star/>"</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN YOUTUBE</pattern>
+        <template>
+             <random>
+               <li>Sure thing! </li>
+               <li>Right away, sir! </li>
+               <li>On it! </li>
+            </random>
+            <system> start chrome http://www.youtube.com</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>YOUTUBE *</pattern>
+        <template>
+             <random>
+               <li>Sure thing! </li>
+               <li>Right away, sir! </li>
+               <li>On it! </li>
+            </random>
+            <system> start chrome https://www.youtube.com/results?search_query=<star/></system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SEARCH FOR * ON YOUTUBE></pattern>
+        <template>
+             <srai>YOUTUBE <star/></srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>SEARCH YOUTUBE FOR *</pattern>
+        <template>
+             <srai>YOUTUBE <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOGLE MAPS *</pattern>
+        <template>
+             <random>
+               <li>Sure thing! </li>
+               <li>Right away, sir! </li>
+               <li>On it! </li>
+            </random>
+            <system> start chrome https://www.google.co.in/maps/search/<star/></system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SEARCH FOR * ON GOOGLE MAPS</pattern>
+        <template>
+             <srai>GOOGLE MAPS <star/></srai>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>SEARCH GOOGLE MAPS FOR *</pattern>
+        <template>
+             <srai>GOOGLE MAPS <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>PLAY SONG *</pattern>
+        <template>
+             <random>
+               <li>Sure thing! </li>
+               <li>Right away, sir! </li>
+               <li>On it! </li>
+            </random>
+            <system> start chrome https://www.youtube.com/results?search_query="<star/>"</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>PLAY *</pattern>
+        <template>
+             <random>
+               <li>Sure thing! </li>
+               <li>Right away, sir! </li>
+               <li>On it! </li>
+            </random>
+            <system> start chrome https://www.youtube.com/results?search_query="<star/>"</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>call facial recog</pattern>
+        <template>
+             <random>
+               <li>Sure thing! </li>
+               <li>Right away, sir! </li>
+               <li>On it! </li>
+            </random>
+            <system> cd C:\Users\Downloads\Faces-Master </system>
+            <system> npm start </system>
+        </template>
+    </category>
+
+   
+
+</aiml>

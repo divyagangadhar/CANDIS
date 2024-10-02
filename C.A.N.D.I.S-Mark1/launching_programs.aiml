@@ -1,0 +1,154 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	
+ <!-- Launching programs -->
+
+    <category>
+        <pattern>open cmd</pattern>
+         <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>start cmd.exe</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>change wall</pattern>
+         <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d C:\Users\chandrs\Pictures\2.bmp /f</system>
+            <system>RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters</system>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>battery</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>powercfg -batteryreport</system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>OPEN VLC</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>start vlc</system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>* OPEN VLC *</pattern>
+        <template>
+             <srai>OPEN VLC</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN VLC *</pattern>
+        <template>
+             <srai>OPEN VLC</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>* OPEN VLC</pattern>
+        <template>
+             <srai>OPEN VLC</srai>
+        </template>
+    </category>
+
+
+
+
+    <category>
+        <pattern>OPEN IE</pattern>
+        <template>
+             <random>
+               <li>Sure thing!</li>
+               <li>Right away, sir!</li>
+               <li>On it!</li>
+            </random>
+            <system>start ixplore</system>
+        </template>
+        
+    </category>
+
+    <category>
+        <pattern>open calculator</pattern>
+        <template>
+             <system>start calc.exe</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>open control panel </pattern>
+        <template>
+             <system>start control.exe</system>
+        </template>
+    </category>
+
+    
+    <category>
+        <pattern>OPEN BROWSER</pattern>
+        <template>
+             <system>start chrome</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* OPEN BROWSER *</pattern>
+        <template>
+             <srai>OPEN browser</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN BROWSER *</pattern>
+        <template>
+             <srai>OPEN browser</srai>
+        </template>
+    </category>
+
+     <category>
+        <pattern>* OPEN BROWSER</pattern>
+        <template>
+             <srai>OPEN browser</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OPEN python</pattern>
+        <template>
+             Python2 or Python3?
+        </template>
+    </category>
+
+    <category>
+        <pattern>python2</pattern>
+        <template>
+             <system>start cmd.exe/py -2</system>
+        </template>
+    </category>
+
+
+
+    
+
+</aiml>

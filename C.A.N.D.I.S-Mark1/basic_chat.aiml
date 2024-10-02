@@ -1,0 +1,353 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Well, hello!
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>analyse emotion</pattern>
+        <template>
+            Press 1 for text-based emotion analysis, 2 for Visual based emotion analysis, press exit to return to UI.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>1</pattern>
+        <template>
+            Opening the code text_cnn.py ... executing text_cnn.py .. Opening new window .. using tensorflow backend ..
+        </template>
+    </category>
+
+    <category>
+        <pattern>2</pattern>
+        <template>
+            connecting pi .. using stored user credentials .. login successful.
+        </template>
+    </category>
+
+    <category>
+        <pattern>Candis</pattern>
+        <template>
+            <random>
+                <li>Welcome to the world of CANDIS home!</li> 
+                <li>Always a pleasure working with you!</li> 
+                <li>Nice to see you!</li> 
+                <li>What would you like me to do?</li> 
+                <li>Your will is my command!</li> 
+            </random>
+        </template>
+    </category>
+
+    <category>
+      <pattern>I LIKE *</pattern>
+      <template>
+         I too like <star/>.
+      </template>
+   </category>
+   
+   <category>
+      <pattern>A * IS A *</pattern>
+      <template>
+         How <star index = "1"/> can not be a <star index = "2"/>?
+      </template>
+   </category>
+
+   <category>
+   <pattern>WHO IS ALBERT EINSTEIN?</pattern>
+   <template>Albert Einstein was a German physicist.</template>
+    </category>
+
+    <category>
+       <pattern> WHO IS Isaac NEWTON? </pattern>
+       <template>Isaac Newton was a English physicist and mathematician.</template>
+    </category>
+
+    
+
+   <category>
+      <pattern>A * IS NOT A *</pattern>
+      <template>
+         How <star index = "1"/> can be a <star index = "2"/>?
+      </template>
+   </category>
+
+    <category>
+        <pattern>SAY WITH ME *</pattern>
+        <template>
+            <star/>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>REPEAT *</pattern>
+        <template>
+            <star/>
+        </template>
+    </category>
+
+   <category>
+        <pattern>REPEAT AFTER ME *</pattern>
+        <template>
+            <star/>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SAY *</pattern>
+        <template>
+            <star/>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CANDIS *</pattern>
+        <template>
+            <srai><star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* CANDIS</pattern>
+        <template>
+            <srai><star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE YOU</pattern>
+        <template>
+            I'm C.A.N.D.I.S, Interactive UI for Emotion perception.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT does candis mean</pattern>
+        <template>
+            C.A.N.D.I.S means Co-operative Autonomous Neural Developmental Intelligent System.
+        </template>
+    </category>
+
+    <category>
+        <pattern>what can you do</pattern>
+        <template>
+            I can process your queries, analyse emotions in 3 different modes - TEXT, VISUAL and SPEECH, run commands on CMD, play the song you request, generate system and battery report and google queries.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO CREATED YOU</pattern>
+        <template>
+            CStein created me!
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO MADE YOU</pattern>
+        <template>
+            CStein made me!
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO CREATED CANDIS</pattern>
+        <template>
+            CStein created me!
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO IS YOUR CREATOR</pattern>
+        <template>
+            CStein created me!
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO IS CStein</pattern>
+        <template>
+            CStein is my father!
+        </template>
+    </category>
+
+        <category>
+        <pattern>WHO IS YOUR FATHER</pattern>
+        <template>
+            CStein is my father.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO IS YOUR MOTHER</pattern>
+        <template>
+            It's a secret. Ask my father.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT DOES JARVIS STAND FOR</pattern>
+        <template>
+            JARVIS stands for Just A Rather Very Intelligent System
+        </template>
+    </category>
+
+    
+
+    <category>
+        <pattern>WHO IS THE REAL IRON MAN</pattern>
+        <template>
+            The real Iron Man is Tony Stark.
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS The date</pattern>
+        <template>
+            The date is <system>date</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT TIME IS IT</pattern>
+        <template>
+            The time is <system>time</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS THE TIME</pattern>
+        <template>
+            <srai>WHAT TIME IS IT</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO AM I</pattern>
+        <template>
+            CStein Sir! Let me play how cool you are :) <system>iron3.mp3</system>
+        </template>
+    </category>
+
+    <category>
+    <pattern>*</pattern>
+    <template>
+        <random>
+           <li>I am sorry, I don't quite understand</li>
+           <li>I don't understand that yet. Maybe you could teach me.</li>
+           <li>I don't know how to answer that. Maybe I could interest you in something else.</li>
+        </random>
+    </template>
+    </category>
+    
+    
+    <category>
+        <pattern>SYSTEM STATUS</pattern>
+        <template>
+            <system>powercfg -batteryreport</system>
+            <system>systeminfo</system>
+        </template>
+    </category>
+
+     <category>
+        <pattern>* SYSTEM STATUS *</pattern>
+        <template>
+            <srai>SYSTEM STATUS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>open cmd</pattern>
+        <template>
+            <srai>start cmd.exe</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SYSTEM STATUS</pattern>
+        <template>
+            <srai>SYSTEM STATUS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SYSTEM STATUS *</pattern>
+        <template>
+            <srai>SYSTEM STATUS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SYSTEM REPORT *</pattern>
+        <template>
+            <srai>SYSTEM STATUS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SYSTEM REPORT</pattern>
+        <template>
+            <srai>SYSTEM STATUS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SYSTEM REPORT *</pattern>
+        <template>
+            <srai>SYSTEM STATUS</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>
+            I am fine, sir.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>Visual</pattern>
+        <template>
+            On it. Please wait while new window opens.
+        </template>
+    </category>
+
+    <category>
+        <pattern>text</pattern>
+        <template>
+            Sure thing.
+        </template>
+    </category>
+
+    <category>
+        <pattern>PLAY ME A SONG</pattern>
+        <template>
+            What song, sir?
+        </template>
+    </category>
+
+    <category>
+        <pattern>PLAY A SONG</pattern>
+        <template>
+            What song, sir?
+        </template>
+    </category>
+
+     <category>
+        <pattern>*</pattern>
+        <that>WHAT SONG SIR</that>
+        <template>
+            <srai>PLAY SONG <input index="1"/></srai>
+        </template>
+    </category>
+
+    
+
+    
+
+</aiml>
